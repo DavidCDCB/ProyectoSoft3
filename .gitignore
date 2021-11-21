@@ -23,7 +23,7 @@
 /backend/public/storage
 /backend/storage/*.key
 /backend/vendor
-/backend/.env
+#/backend/.env
 /backend/.env.backup
 /backend/.phpunit.result.cache
 /backend/docker-compose.override.yml

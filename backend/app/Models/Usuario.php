@@ -11,6 +11,7 @@ class Usuario extends Model
 	//protected $table = 'posts_datos';
 	protected $fillable = ['nombre', 'apellido', 'email'];
 
+	/*
 	public function comentarios()
 	{
 		return $this->hasMany(Comentario::class);
@@ -19,5 +20,5 @@ class Usuario extends Model
 	public function tags()
 	{
 		return $this->belongsToMany(Tag::class);
-	}
+	}*/
 }

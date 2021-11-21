@@ -49,11 +49,11 @@ class UsuarioController extends Controller
      */
     public function show($id)
     {
-		$usuario = Usuario::with("comentarios","tags")->where("id","=",$id)->first();
-
+		//$usuario = Usuario::with("comentarios","tags")->where("id","=",$id)->first();
+		$usuario = Usuario::where("id","=",$id)->first();
 		// https://laravel.com/docs/8.x/eloquent-relationships#attaching-detaching
 		// https://laravel.com/docs/8.x/eloquent-relationships#syncing-associations
-		$usuario->tags();
+		//$usuario->tags();
 
         return response()->json($usuario, 200);
     }
